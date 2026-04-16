@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: slate-bot
+    env:node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key:GITHUB_TOKEN
+        sync: false
+      - key:GITHUB_WEBJOOK_SECRET
+        sync: false
+      - key:DEEPSEEK_API_KEY
+        sync: false
+      - key:NODE_ENV
+        value: production
