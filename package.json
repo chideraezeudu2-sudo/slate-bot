@@ -1,0 +1,28 @@
+{
+  "name": "slate-bot",
+  "version": "0.1.0",
+  "description": "Autonomous GitHub bot that generates code from specifications",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": [
+    "github",
+    "bot",
+    "ai",
+    "code-generation",
+    "deepseek"
+  ],
+  "author": "Slate",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^21.0.0",
+    "axios": "^2.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
